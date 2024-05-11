@@ -20,3 +20,4 @@ window.onresize = () => {
    cnv.width = innerWidth
    cnv.height = innerHeight   
 }
+
