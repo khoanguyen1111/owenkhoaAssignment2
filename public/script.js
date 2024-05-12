@@ -7,9 +7,11 @@ cnv.height = innerHeight;
 
 const ctx = cnv.getContext(`2d`);
 
-cnv.style.backgroundColor = "deeppink";
+// cnv.style.backgroundColor = "deeppink";
 
 cnv.style.backgroundColor = "darkseagreen";
+
+const audio = document.getElementById("peace");
 
 let hitMe = true; // Boolean variable to control animation
 
@@ -134,6 +136,7 @@ document.addEventListener("keydown", function (event) {
   if (event.code === "Space") {
     hitMe = !hitMe; // Toggle animation
     if (hitMe) {
+      audio.play(); //start sound
       glitchAnimation(); // Start animation if toggled on
     }
   }
